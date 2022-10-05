@@ -38,7 +38,7 @@ java -version
 
 如图显示则为成功安装
 
-![Untitled](Cobalt%20Strike%2016f509fd6e95475c83832ae9e3e1730c/Untitled%201.png)
+![Untitled](res/Untitled%201.png)
 
 ## 二. 配置服务端
 
@@ -46,9 +46,9 @@ java -version
 
 我使用的软件包是 @www.ddosi.org 上的 Cobalt Strike 4.5 + CS Agent 版本，这里同时放出原版
 
-[Coablt strike_4.5](Cobalt%20Strike%2016f509fd6e95475c83832ae9e3e1730c/cobaltstrike_4.5.jar%25E5%258E%259F%25E7%2589%2588.zip)
+[Coablt strike_4.5](res/cobaltstrike_4.5.jar%25E5%258E%259F%25E7%2589%2588.zip)
 
-[Coablt strike_4.5+CSAgent .zip](Cobalt%20Strike%2016f509fd6e95475c83832ae9e3e1730c/coablt_strike_4.5CSAgent_.zip)
+[Coablt strike_4.5+CSAgent .zip](res/coablt_strike_4.5CSAgent_.zip)
 
 部分破解版本有可能会带有木马。另外即使没有后门，CS本身也是会报毒，因为本身带很多攻击性的payload，可以通过此页面进行判断是否来自官方：
 
