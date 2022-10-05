@@ -28,7 +28,7 @@ yum install java-1.8.0-openjdk* -y #jdk 1.8
 
 1. 如果你的系统中还装有不同版本的 JDK 的话，请使用 `alternatives --config java` 对默认运行的 Java 版本进行选择，或使用 `rpm -qa | grep java | xargs rpm -e --nodeps` 进行删除
 
-![Untitled](Cobalt%20Strike%2016f509fd6e95475c83832ae9e3e1730c/Untitled.png)
+![Untitled](res/Untitled.png)
 
 1. 验证 Java 环境是否成功配置，运行Java版本检查命令：
 
