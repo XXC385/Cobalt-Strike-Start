@@ -1,8 +1,4 @@
-# 0x02-1 优化使用体验
-
-
-
-### 一. TeamSever 持久化
+# TeamSever 持久化
 
 在我们安装完后，会发现一段时间不使用 SSH 工具会自动断开与 TeamSever 服务器的连接，导致服务端不可用，这时候使用 `screen` 工具实现TeamSever 的持久化
 
