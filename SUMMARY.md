@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [关于本项目](README.md)
