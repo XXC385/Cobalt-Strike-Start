@@ -12,7 +12,7 @@
 
 CS 官方建议安装 `JDK 11/1.8` ，所以这里我们用 `JDK 11` 作为例子，如果服务器开机自带 Java 环境，**建议先卸载，防止环境混乱**
 
-输入命令（**二选一即可**）
+1. 输入命令（**二选一即可**）
 
 ```bash
 yum install java-11-openjdk-devel #jdk 11
@@ -20,11 +20,11 @@ yum install java-11-openjdk-devel #jdk 11
 yum install java-1.8.0-openjdk* -y #jdk 1.8
 ```
 
-如果你的系统中还装有不同版本的 JDK 的话，请使用 `alternatives --config java` 对默认运行的 Java 版本进行选择，或使用 `rpm -qa | grep java | xargs rpm -e --nodeps` 进行删除
+1. 如果你的系统中还装有不同版本的 JDK 的话，请使用 `alternatives --config java` 对默认运行的 Java 版本进行选择，或使用 `rpm -qa | grep java | xargs rpm -e --nodeps` 进行删除
 
 ![Untitled](https://raw.githubusercontent.com/XXC385/pic-club/main/Untitled.png)
 
-验证 Java 环境是否成功配置，运行Java版本检查命令：
+1. 验证 Java 环境是否成功配置，运行Java版本检查命令：
 
 ```bash
 java -version
@@ -44,15 +44,13 @@ java -version
 
 **如何查看文件的 Hash 值**
 
-打开 `powershell`
+1.  打开 `powershell`
 
-![image-20221207120043642](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120043642.png)
+    ![image-20221207120043642](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120043642.png)
+2.  输入`Get-FileHash .\文件名`（注意：文件名包括后缀）
 
-输入`Get-FileHash .\文件名`（注意：文件名包括后缀）
-
-![image-20221207120145867](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120145867.png)
-
-对比 Hash 是否相同，如不同则已经被修改，可能存在投毒风险，在线对比工具：http://www.jsons.cn/txtdiff/
+    ![image-20221207120145867](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120145867.png)
+3. 对比 Hash 是否相同，如不同则已经被修改，可能存在投毒风险，在线对比工具：http://www.jsons.cn/txtdiff/
 
 **Hash 查询在线地址（更新到4.7.2）** 官方地址：https://verify.cobaltstrike.com/
 
@@ -193,7 +191,7 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 
 **2. CSAgent 说明**
 
-原项目地址：https://github.com/Twi1ight/CSAgent（由于 DMCA 删除，存储库不可用）
+原项目地址：‣ （由于 DMCA 删除，存储库不可用）
 
 说明：`Cobalt Strike 4.x` 通用白嫖及汉化加载器，采用 `javaagent+javassist` 的方式动态修改 jar包，可直接加载原版 cobaltstrike.jar，理论上支持到目前为止的所有4.x版本（不包括 4.7）
 
@@ -204,9 +202,7 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 使用方法\*\*（资源已内置，无需进行配置）\*\*：
 
 1. 下载 CSAgent.zip 解压，将原版 cobaltstrike.jar 放到解压目录中，确保CSAgent.jar、resources文件夹、scripts文件夹和 cobaltstrike.jar 处于同级目录
-2. 正常使用 teamserver 和 cobaltstrike 脚本启动即可，windows 使用 cobaltstrike.bat 启动
-3. 如果仅想使用破解功能，只需删除resources文件夹和scripts文件夹即可去除汉化
-4. 替换 cobaltstrike、teamserver、agscript、c2lint、cobaltstrike.bat 文件中的解密 Key，目前内置的key为4.4版本，各个版本的官方解密 Key：
+2. 替换 cobaltstrike、teamserver、agscript、c2lint、cobaltstrike.bat 文件中的解密 Key，目前内置的key为4.4版本，各个版本的官方解密 Key：
 
 ```bash
 4.0 1be5be52c6255c33558e8a1cb667cb06
@@ -216,6 +212,9 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 4.4 5e98194a01c6b48fa582a6a9fcbb92d6
 4.5 f38eb3d1a335b252b58bc2acde81b542
 ```
+
+1. 正常使用 teamserver 和 cobaltstrike 脚本启动即可，windows 使用 cobaltstrike.bat 启动
+2. 如果仅想使用破解功能，只需删除resources文件夹和scripts文件夹即可去除汉化
 
 **3. 配置 TeamSever**
 
