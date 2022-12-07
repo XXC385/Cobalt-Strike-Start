@@ -12,7 +12,7 @@
 
 CS 官方建议安装 `JDK 11/1.8` ，所以这里我们用 `JDK 11` 作为例子，如果服务器开机自带 Java 环境，**建议先卸载，防止环境混乱**
 
-1. 输入命令（**二选一即可**）
+输入命令（**二选一即可**）
 
 ```bash
 yum install java-11-openjdk-devel #jdk 11
@@ -20,11 +20,11 @@ yum install java-11-openjdk-devel #jdk 11
 yum install java-1.8.0-openjdk* -y #jdk 1.8
 ```
 
-1. 如果你的系统中还装有不同版本的 JDK 的话，请使用 `alternatives --config java` 对默认运行的 Java 版本进行选择，或使用 `rpm -qa | grep java | xargs rpm -e --nodeps` 进行删除
+如果你的系统中还装有不同版本的 JDK 的话，请使用 `alternatives --config java` 对默认运行的 Java 版本进行选择，或使用 `rpm -qa | grep java | xargs rpm -e --nodeps` 进行删除
 
 ![Untitled](https://raw.githubusercontent.com/XXC385/pic-club/main/Untitled.png)
 
-1. 验证 Java 环境是否成功配置，运行Java版本检查命令：
+验证 Java 环境是否成功配置，运行Java版本检查命令：
 
 ```bash
 java -version
@@ -44,13 +44,15 @@ java -version
 
 **如何查看文件的 Hash 值**
 
-1.  打开 `powershell`
+打开 `powershell`
 
-    ![image-20221207120043642](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120043642.png)
-2.  输入`Get-FileHash .\文件名`（注意：文件名包括后缀）
+![image-20221207120043642](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120043642.png)
 
-    ![image-20221207120145867](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120145867.png)
-3. 对比 Hash 是否相同，如不同则已经被修改，可能存在投毒风险，在线对比工具：http://www.jsons.cn/txtdiff/
+输入`Get-FileHash .\文件名`（注意：文件名包括后缀）
+
+![image-20221207120145867](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221207120145867.png)
+
+对比 Hash 是否相同，如不同则已经被修改，可能存在投毒风险，在线对比工具：http://www.jsons.cn/txtdiff/
 
 **Hash 查询在线地址（更新到4.7.2）** 官方地址：https://verify.cobaltstrike.com/
 
@@ -191,7 +193,7 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 
 **2. CSAgent 说明**
 
-原项目地址：[https://github.com/Twi1ight/CSAgent](https://github.com/Twi1ight/CSAgent)（由于 DMCA 删除，存储库不可用）
+原项目地址：https://github.com/Twi1ight/CSAgent（由于 DMCA 删除，存储库不可用）
 
 说明：`Cobalt Strike 4.x` 通用白嫖及汉化加载器，采用 `javaagent+javassist` 的方式动态修改 jar包，可直接加载原版 cobaltstrike.jar，理论上支持到目前为止的所有4.x版本（不包括 4.7）
 
@@ -199,10 +201,12 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 2. 汉化范围更全面，之前的各类汉化版都是没有完全汉化按钮的，因为这里涉及到 Java 的一个坑，汉化后可能导致按钮功能失效，本版本对所有按钮全覆盖； 另外，针对 Beacon 终端交互内的命令及命令帮助也都有详尽的汉化说明，部分命令还加上了我个人的说明见解
 3. 汉化方式更先进，并非纯粹的正则替换，针对菜单、命令、命令帮助说明的汉化利用了Cobalt Strike加载资源文件的特性，直接翻译资源文件即可，无需再做动态替换，性能更高，后续版本更新也更方便 针对界面的各类说明、标签汉化，全部写入配置文件中，后续版本只需修改这部分配置即可，无需再修改 Java 代码
 
-使用方法（资源已内置，无需进行配置)：
+使用方法\*\*（资源已内置，无需进行配置）\*\*：
 
 1. 下载 CSAgent.zip 解压，将原版 cobaltstrike.jar 放到解压目录中，确保CSAgent.jar、resources文件夹、scripts文件夹和 cobaltstrike.jar 处于同级目录
-2. 替换 cobaltstrike、teamserver、agscript、c2lint、cobaltstrike.bat 文件中的解密 Key，目前内置的key为4.4版本，各个版本的官方解密 Key：
+2. 正常使用 teamserver 和 cobaltstrike 脚本启动即可，windows 使用 cobaltstrike.bat 启动
+3. 如果仅想使用破解功能，只需删除resources文件夹和scripts文件夹即可去除汉化
+4. 替换 cobaltstrike、teamserver、agscript、c2lint、cobaltstrike.bat 文件中的解密 Key，目前内置的key为4.4版本，各个版本的官方解密 Key：
 
 ```bash
 4.0 1be5be52c6255c33558e8a1cb667cb06
@@ -212,9 +216,6 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 4.4 5e98194a01c6b48fa582a6a9fcbb92d6
 4.5 f38eb3d1a335b252b58bc2acde81b542
 ```
-
-1. 正常使用 teamserver 和 cobaltstrike 脚本启动即可，windows 使用 cobaltstrike.bat 启动
-2. 如果仅想使用破解功能，只需删除resources文件夹和scripts文件夹即可去除汉化
 
 **3. 配置 TeamSever**
 
