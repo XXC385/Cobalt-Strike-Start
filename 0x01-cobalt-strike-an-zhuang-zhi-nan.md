@@ -191,7 +191,7 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 
 **2. CSAgent 说明**
 
-原项目地址：‣ （由于 DMCA 删除，存储库不可用）
+原项目地址：[https://github.com/Twi1ight/CSAgent](https://github.com/Twi1ight/CSAgent)（由于 DMCA 删除，存储库不可用）
 
 说明：`Cobalt Strike 4.x` 通用白嫖及汉化加载器，采用 `javaagent+javassist` 的方式动态修改 jar包，可直接加载原版 cobaltstrike.jar，理论上支持到目前为止的所有4.x版本（不包括 4.7）
 
