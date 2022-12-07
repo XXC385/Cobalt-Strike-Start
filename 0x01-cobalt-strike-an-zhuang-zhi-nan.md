@@ -199,7 +199,7 @@ ad2ddb76ab3f4438d2553a2fa8f98384f8778e6c18e49daaca5f3fca0bbae1e2	Cobalt Strike 3
 2. 汉化范围更全面，之前的各类汉化版都是没有完全汉化按钮的，因为这里涉及到 Java 的一个坑，汉化后可能导致按钮功能失效，本版本对所有按钮全覆盖； 另外，针对 Beacon 终端交互内的命令及命令帮助也都有详尽的汉化说明，部分命令还加上了我个人的说明见解
 3. 汉化方式更先进，并非纯粹的正则替换，针对菜单、命令、命令帮助说明的汉化利用了Cobalt Strike加载资源文件的特性，直接翻译资源文件即可，无需再做动态替换，性能更高，后续版本更新也更方便 针对界面的各类说明、标签汉化，全部写入配置文件中，后续版本只需修改这部分配置即可，无需再修改 Java 代码
 
-使用方法\*\*（资源已内置，无需进行配置）\*\*：
+使用方法（资源已内置，无需进行配置)：
 
 1. 下载 CSAgent.zip 解压，将原版 cobaltstrike.jar 放到解压目录中，确保CSAgent.jar、resources文件夹、scripts文件夹和 cobaltstrike.jar 处于同级目录
 2. 替换 cobaltstrike、teamserver、agscript、c2lint、cobaltstrike.bat 文件中的解密 Key，目前内置的key为4.4版本，各个版本的官方解密 Key：
