@@ -12,4 +12,12 @@ Cobalt Strike官网：[Cobalt Strike | Adversary Simulation and Red Team Operati
 
 ### 0x00-1 更新日志
 
-2022年12月7日：更改编辑器为 Typore ，使用 GitBook 进行更新，重新排版格式，更换图床为 Github（[https://github.com/XXC385/pic-club](https://github.com/XXC385/pic-club)）
+2022年12月7日：
+
+1. 更改编辑器为 Typore ，使用 GitBook 进行更新，重新排版格式
+2. 更换图床为 Github（[https://github.com/XXC385/pic-club](https://github.com/XXC385/pic-club)）
+
+2022年12月17日：
+
+1. 修改一处文章中的错误
+2. 更新 Cobalt Strike 4.5、4.7 工程文件
