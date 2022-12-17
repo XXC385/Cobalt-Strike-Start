@@ -7,7 +7,7 @@
 首先我们先找到 IntelliJ IDEA 中的 `java-decompiler.jar` 文件，`java-decompiler.jar` 是 IntelliJ IDEA 自带的反编译插件，一般存在此目录下：
 
 ```
-IntelliJ IDEA存放位置/plugins/java-decompiler.jar/lib/
+IntelliJ IDEA存放位置\plugins\java-decompiler.jar\lib\
 ```
 
 ![image-20221209094530826](https://raw.githubusercontent.com/XXC385/pic-club/main/image-20221209094530826.png)
