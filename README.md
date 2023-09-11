@@ -11,15 +11,3 @@ Cobalt Strike官网：[Cobalt Strike | Adversary Simulation and Red Team Operati
 关于反馈和纠正 因为本项目更多是我理解再输出的过程，难免会出现纰漏，本项目十分欢迎批评和反馈，请各位师傅通过 lssues 进行提交相关错误，如果你在实践过程中遇到我没有写明的技术细节(Bug 报错...)请使用 pull requests 功能进行提交，最好能附上 Debug 的过程，经过验证后会在项目中修改或增加
 
 更好的阅读体验：[https://38-5s-organization.gitbook.io/cobalt-strike-start/](https://38-5s-organization.gitbook.io/cobalt-strike-start/)
-
-### 0x00-1 更新日志
-
-2022年12月7日：
-
-1. 更改编辑器为 Typore ，使用 GitBook 进行更新，重新排版格式
-2. 更换图床为 Github（[https://github.com/XXC385/pic-club](https://github.com/XXC385/pic-club)）
-
-2022年12月17日：
-
-1. 修改文章中的一处错误
-2. 更新 Cobalt Strike 4.5、4.7 工程文件
