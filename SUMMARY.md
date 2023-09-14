@@ -16,4 +16,3 @@
 
 * [3.1 Cobalt Strike 改造](0x03-er-ci-kai-fa/3.1-cobalt-strike-gai-zao.md)
 * [3.2 使用 IntelliJ IDEA 构建二次开发环境](0x03-er-ci-kai-fa/3.2-shi-yong-intellij-idea-gou-jian-er-ci-kai-fa-huan-jing.md)
-* [Page](0x03-er-ci-kai-fa/page.md)
